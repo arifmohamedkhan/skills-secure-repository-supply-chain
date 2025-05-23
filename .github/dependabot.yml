@@ -3,12 +3,9 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
 
-  - package-ecosystem: "npm"
-    directory: "/code/src/AttendeeSite"
+  - package-ecosystem: "nuget"
+    directory: "/code/"
     schedule:
-      interval: "daily"
-    open-pull-requests-limit: 5
-    allow:
-      - dependency-type: "direct"
+      interval: "weekly"
